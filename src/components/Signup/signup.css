@@ -1,0 +1,225 @@
+.register-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    align-items: center;
+}
+
+.signUp-head {
+    font-size: 32px;
+    color: rgb(2, 134, 68);
+
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.signUp-option {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.signUp-option img {
+    width: 23px;
+    padding: 8px;
+    border: 1px solid rgb(168, 167, 167);
+    border-radius: 50%;
+}
+
+.signUp-account form {
+    margin-top: 10px;
+    height: 320px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(90, 90, 90);
+}
+.Register{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.signUp-account form input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 15.5px;
+    color: rgb(90, 90, 90);
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.signUp-btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(2, 134, 68);
+    transition: all .5s ease;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.signUp-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(3, 156, 80);
+
+}
+
+.login-link {
+    background-color: rgb(2, 134, 68);
+    flex: 1.3;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    height: 100%;
+}
+
+.login-link-container {
+    height: 40%;
+    color: white;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-link-text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-link-content {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-link-btn {
+    cursor: pointer;
+    padding: 10px 35px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    border: 2px solid white;
+    color: inherit;
+    background-color: inherit;
+    transition: all .5s ease;
+    color: white;
+    border-radius: 25px;
+}
+
+.login-link-btn:hover {
+    transform: scale(1.1);    
+    background-color: rgb(3, 156, 80);
+}
+
+@media only screen and (max-width:900px) {
+    .register-container {
+        box-shadow: none;
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .signUp {
+        display: flex;
+        flex: n;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        max-width: 650px;
+    }
+    
+    .login-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+        align-items: center;
+        height:100px !important;
+        width: 100%;
+    }
+    .signUp-head {
+        font-size: 25px;
+    }
+    .signUp-option {
+        margin-top: 5px;
+        width: 150px;
+    }
+    .signUp-option img {
+        width: 20px;
+        padding: 5px;
+    }
+    .signUp-account form {
+        height: 280px;
+        width: 240px;
+    }
+    .signUp-account form input {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .already-signup{
+        font-size: 14px;
+    }
+    .signUp-btn {
+        margin-left: 10px;
+        padding: 5px 25px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+    .login-link-btn{
+        padding: 8px 25px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+    .signUp-btn:hover,.login-link-btn:hover {
+        transform: scale(1.05);
+    }
+    .login-link-container {
+        height: 50%;
+        padding: 0px 20px;
+    }
+    .login-link-text {
+        font-size: 25px;
+    }
+    .login-link-content {
+        font-size: 15px;
+        
+    }
+}

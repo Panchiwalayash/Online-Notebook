@@ -1,0 +1,91 @@
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    background-color: #0081C9;
+    color: white;
+    position: fixed;
+    z-index: 5;
+}
+.nav-start{
+    flex: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-start img{
+    height: 40px;
+    width: 40px;    
+    object-fit: cover;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.nav-start span{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.nav-mid{
+    flex:4;
+}
+.nav-mid .home-link{
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-end{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 25px;
+}
+.nav-end .auth-link{
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgb(3, 50, 98);
+    transition: .5s all ease;
+    cursor: pointer;
+}
+.nav-end .auth-link:hover{
+    transform: scale(1.1);
+
+}
+@media only screen and (max-width:850px){
+    .nav-start{
+        display: block;
+        margin-left: 5vw;
+    }
+    .nav-start span{
+        display: none;
+    }
+    .nav-mid{
+        flex:3;
+    }
+    .nav-end .auth-link{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:600px){
+    .nav-mid{
+        flex:2;
+    }
+    .nav-end{
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width:400px){
+    .nav-mid{
+        flex:1;
+    }
+    .nav-start span{
+        font-size: 16px;
+    }
+    .nav-end{
+        margin-right: 15px;
+    }
+    .nav-end .auth-link{
+        font-size: 14px;
+    }
+}

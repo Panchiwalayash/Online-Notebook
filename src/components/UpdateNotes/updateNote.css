@@ -1,0 +1,67 @@
+.updateNote {
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+  z-index: 2;
+  margin-top: 12vh;
+}
+.updateNote-main {
+  background: #5BC0F8;
+  padding: 5px 10px;
+  width: 80%;
+  max-width: 525px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.updateNote-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updateNote-head {
+  margin-top: 1.5vh;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.updateNote-section {
+  width: 90%;
+  padding: 5px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+}
+.updateNote-title,
+.updateNote-desc,
+.updateNote-tag {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.updateNote-section input,.updateNote-section textarea {
+  padding: 5px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.updateNote-section-btn{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5vh;
+}
+.updateNote-form button {
+  padding: 7px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #E8AA42;
+  color: white;
+}

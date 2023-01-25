@@ -1,0 +1,73 @@
+.alertComp{
+    width: 100vw;
+    font-size: 20px;
+    height: 7vh;
+    color: #3c763d;
+    background-color: #d3f2c7;
+    position: absolute;
+    border-color: #d6e9c6;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    z-index: 10;
+    border-radius: 4px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.alertStyle{
+    margin-right: 2vw;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.alertDanger{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    top: 0;
+    padding-left: 3vw;
+    z-index: 10;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:700px){
+    .alertComp{
+    width: 90vw;
+
+        font-size: 18px;
+    }
+    .alertStyle{
+        font-size: 30px;
+    }
+    .alertDanger{
+    width: 90vw;
+
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:450px){
+    .alertComp{
+        font-size: 16px;
+    }
+    .alertStyle{
+        font-size: 30px;
+    }
+    .alertDanger{
+        font-size: 16px;
+    }
+}

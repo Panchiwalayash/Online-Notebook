@@ -1,0 +1,106 @@
+.mainContent.active {
+  opacity: 0.3;
+}
+.mainContent {
+  margin-top: 8vh;
+  width: 100vw;
+}
+.addNotesClass {
+  position: relative;
+  margin: auto;
+  min-width: 300px !important;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+.mainContentHead h2{
+  text-align:center;
+  margin-top: 10vh;
+}
+.note-container {
+  color: black;
+  width: 100%;
+}
+.note-container h3{
+  text-align: center;
+  color: black;
+  margin: 2vh 0;
+}
+.noteSection {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.noteSection .Nonote {
+  font-size: 20px;
+}
+.updateNoteClass {
+  position: absolute;
+  z-index: 2;
+}
+.addimage img{
+  margin: 1vh 2vw;
+  width: 50px;
+  transition: .3s all ease;
+}
+.addimage img:hover{
+  scale: 1.1;
+}
+.addimageactive img{
+  margin: 2vh 2.5vw;
+  width: 45px;
+  transition: .3s all ease;
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width:700px) {
+  .note-container h2 {
+    font-size: 20px;
+  }
+  .mainContentHead h2{
+    font-size: 20px;
+  }
+  .addimage img{
+    margin: 10px;
+    width: 35px;
+  }
+  .addimage img:hover{
+    scale: 1.1;
+  }
+  .addimageactive img{
+    margin: 25px;
+    width: 30px;
+  }
+}
+@media only screen and (max-width:500px) {
+  .addNotesClass {
+    min-width: 300px !important;
+    width: 80vw;
+  }
+  .mainContentHead h2{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .addNotesClass {
+    width: 95vw;
+  }
+  .note-container h2 {
+    font-size: 18px;
+  }
+  .addimage img{
+    margin: 10px;
+    width: 30px;
+  }
+  .addimage img:hover{
+    scale: 1.05;
+  }
+  .addimageactive img{
+    margin: 20px;
+    width: 25px;
+  }
+}
